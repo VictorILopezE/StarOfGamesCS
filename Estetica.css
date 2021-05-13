@@ -45,10 +45,27 @@ body{
     text-align: left;
 }
 
+#pantalla-dividida{
+    display: flex;
+}
+
+.pant-div{
+    position: relative;
+    top: 30px;
+}
+.derecha{
+    width: 70%;
+}
+.izquierda{
+    width: 30%;
+}
+
+
 .pie{
     background: url("imagenes/milky-way-2750627_1920.jpg") repeat;
-    position:fixed;
+    position: fixed;
     bottom: 0;
+    height: 6%;
     width: 100%;
     color: white;
     text-align: center;
@@ -103,15 +120,6 @@ body{
     padding-left: 30px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center, justify;
-}
-
-
-.imagen2 img{
-    height: 60%;
-    width: 180px;
-    background-size: cover;
-    display: block;
-    margin: auto;
 }
 
 .novedades img{
@@ -199,4 +207,53 @@ p{
     text-align: center;
     letter-spacing: normal;
     font-size: 25px;
+}
+
+.form-tabla{
+    border-style: solid;
+    border-color: #ffffff;
+}
+
+.form-tabla tr {
+    color: #ffffff;
+}
+
+.lb1{
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+}
+.lb2{
+    color: #ffffff;
+    text-align: center;
+}
+.form-lb1{
+    text-align: center;
+}
+
+.form-txt{
+    text-align: center;
+    position: relative;
+}
+.form-btn{
+    position: relative;
+    bottom: 10px;
+    left: 15px;
+    border: 2px solid;
+    border-radius: 12px;
+    font-size: 20px;
+    color: #ffffff;
+    background: url("imagenes/milky-way-2750627_1920.jpg");
+}
+
+.btn9{
+    border: 2px solid;
+    border-radius: 12px;
+    font-size: 20px;
+    color: #ffffff;
+    background: url("imagenes/milky-way-2750627_1920.jpg");
+}
+
+.form-registro{
+    color: #ffffff;
 }

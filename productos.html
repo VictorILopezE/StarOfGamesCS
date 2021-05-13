@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Estetica.css">
+    <script type="text/javascript" src="carrito.js"></script>
     <title>StarofGamesProd</title>
-    
 </head>
 <body>
     <header>
@@ -15,76 +15,155 @@
         </div>
     </header>
 
-        <div id="navegacion">
-            <ul>
-                <li><a class="ini" href="index.html">Inicio</a></li>
-                <li>|</li>
-                <li><a class="in" href="productos.html">Productos</a></li>
-                <li>|</li>
-                <li><a class="pro" href="contactos.html">Contactos</a></li>
-            </ul>
-        </div>
-
-<main class= "Productos">
+     <div id="navegacion">
+        <ul>
+            <li><a class="ini" href="Index.html">Inicio</a></li>
+            <li>|</li>
+            <li><a class="in" href="Productos.html">Productos</a></li>
+            <li>|</li>
+            <li><a class="pro" href="Contactos.html">Contactos</a></li>
+        </ul>
+    </div>
+<section id="pantalla-dividida" class="pant-div">
+    
+<div class= "derecha">
     <div class="contenedor-imagen">
-            <div class="tx1">
+    
+            <div class="tx1 form-txt">
                 <img src="imagenes/articulo2.png">
                 <p>"Armed Dragon" de Chazz Princeton</p>
                 <p>$349.99</p>
+                <input type="button" id="btn1" value="Añadir al carrito" onclick="agregaCarrito1()" class="form-btn">
             </div>
-
-            <div class="tx2">
+        
+            <div class="tx2 form-txt">
                 <img src="imagenes/articulo.png">
                 <p>Dragons of Legend: The Complete Series</p>
                 <p>$349.99</p>
+                <input type="button" id="btn2" value="Añadir al carrito" onclick="agregaCarrito2()" class="form-btn">
             </div>
 
-            <div class="tx3">
+            <div class="tx3 form-txt">
                 <img src="imagenes/articulo3.png">
                 <p>Magic KALDHEIM Collector Boosters</p>
                 <p>$321.99</p>
+                <input type="button" id="btn3" value="Añadir al carrito" onclick="agregaCarrito3()" class="form-btn">
             </div>
 
-            <div class="tx4">
+            <div class="tx4 form-txt">
                 <img src="imagenes/articulo4.png">
                 <p>Magic The Gathering KALDHEIM Sobres de Draft</p>
                 <p>$321.99</p>
+                <input type="button" id="btn4" value="Añadir al carrito" onclick="agregaCarrito4()" class="form-btn">
             </div>
-    </div>
 
-    <div class="imagen2">
-            <div class="tx1_1">
+            <div class="tx5 form-txt">
                 <img src="imagenes/articulo5.png">
                 <p>Secret Rares:"Blue-Eyes" de Yu-Gi-Oh!</p>
                 <p>$349.99</p>
+                <input type="button" id="btn5" value="Añadir al carrito" onclick="agregaCarrito5()" class="form-btn">
             </div>
 
-            <div class="tx2_1">
+            <div class="tx6 form-txt">
                 <img src="imagenes/articulo6.png">
                 <p>"Phantom Knight" de Yu-Gi-Oh!</p>
                 <p>$349.99</p>
+                <input type="button" id="btn6" value="Añadir al carrito" onclick="agregaCarrito6()" class="form-btn">
             </div>
 
-            <div class="tx3_1">
+            <div class="tx7 form-txt">
                 <img src="imagenes/articulo7.png">
                 <p>"Legendary Duelists" de Yu-Gi-Oh!</p>
                 <p>$349.99</p>
+                <input type="button" id="btn7" value="Añadir al carrito" onclick="agregaCarrito7()" class="form-btn">
             </div>
 
-            <div class="tx4_1">
+            <div class="tx8 form-txt">
                 <img src="imagenes/articulo8.png">
                 <p>Magic The Gathering Commander Legends</p>
                 <p>$349.99</p>
+                <input type="button" id="btn8" value="Añadir al carrito" onclick="agregaCarrito8()" class="form-btn">
                 <br><br><br><br>
             </div>
-        </div>
-</main>
-        
-<footer>
-    <div class= "pie">
-    <h4>Copyrigth 2021 Todos los Derechos Reservados</h4>
-    </div>
-</footer>
 
+    </div>
+</div>
+<div class="izquierda">
+    <form action="pedido.php" method="post">
+
+            <section class="form-registro">
+               
+                <div>
+                    Nombre:
+                    <input type="text" name="nombre">
+                </div>
+                
+                <div>
+                    Correo Electronico:
+                    <input type="text" name="correo">
+                </div>    
+
+                <div>
+                    Direccion:
+                    <input type="text" name="direccion">
+                </div>      
+
+                <div>
+                    Codigo postal:
+                    <input type="text" name="cdpostal">
+                </div>     
+
+            </section>
+    
+            <table class="form-tabla">
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                    </tr>
+
+                
+                    <tr id="app">
+                        
+                     </tr>
+                    
+                    <tr id="app1">
+                        
+                    </tr>
+
+                    <tr id="app2">
+                        
+                    </tr>
+
+                    <tr id="app3">
+                        
+                    </tr>
+
+                    <tr id="app4">
+                        
+                    </tr>
+
+                    <tr id="app5">
+                        
+                    </tr>
+
+                    <tr id="app6">
+                        
+                    </tr>
+
+                    <tr id="app7">
+                        
+                    </tr>
+            </table>
+
+            <input type="submit" value="Confirmar" class="btn9">
+</form>
+</div>
+</section>
+        
 </body>
+<footer>
+        <div class= "pie">
+        <h4>Copyrigth 2021 Todos los Derechos Reservados</h4>
+        </div>
+    </footer>
 </html>
